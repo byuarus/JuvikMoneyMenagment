@@ -1,0 +1,41 @@
+
+.container {
+
+}
+
+#loginBackground{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(rgba(1,1,1,0) 45%, black 95%),url("../res/loginBackground.jpg");
+	background-size: cover;
+	background-position: center center;
+	z-index: -1; 
+}
+
+#loginTitle{
+	font-weight: bold;
+	color: white;  
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	text-shadow: 2px 2px rgba(0,0,0,0.5);
+	font-size: 2em;
+}
+@media screen and (min-width: 992px) {
+    #loginTitle {
+        font-size: 3em;
+    }
+}
+#facebookLoginBtnContainer{ 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 5%;
+}
+
+#facebookLoginBtn{
+	
+}
