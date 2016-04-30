@@ -7,7 +7,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background: radial-gradient(rgba(1,1,1,0) 45%, black 95%),url("../res/loginBackground.jpg");
+	background: radial-gradient(rgba(1,1,1,0) 45%, black 95%),url("app/res/loginBackground.jpg");
 	background-size: cover;
 	background-position: center center;
 	z-index: -1; 

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Juvik Money Managment</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+  <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+  <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+  <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+  <script src="node_modules/rxjs/bundles/Rx.js"></script>
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+  <!--<link rel="stylesheet" href="app/login/login.css">
+  <link rel="stylesheet" href="app/app.css">-->
+
+   
+    
+   <!-- Bootstrap -->
+   <link href="app/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+    
+    
+</head>
+<body>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  
+  <!--which is where our app lives-->
+  <my-app>Loading...</my-app>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="app/components/bootstrap/js/bootstrap.min.js"></script>
+  
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+  <script>
+        (function(d){
+    // load the Facebook javascript SDK
+
+      var js, 
+      id = 'facebook-jssdk', 
+      ref = d.getElementsByTagName('script')[0];
+
+      if (d.getElementById(id)) {
+        return;
+      }
+
+      js = d.createElement('script'); 
+      js.id = id; 
+      js.async = true;
+      js.src = "//connect.facebook.net/en_US/all.js";
+
+      ref.parentNode.insertBefore(js, ref);
+
+    }(document));
+  </script>
+  <!--<script src="app/app.js"></script>
+  <script src="app/login/login.js"></script>
+  <script src="app/view2/view2.js"></script>-->
+  <script src="app/components/version/version.js"></script>
+  <script src="app/components/version/version-directive.js"></script>
+  <script src="app/components/version/interpolate-filter.js"></script>
+</body>
+</html>
